@@ -1,0 +1,8 @@
+[book]
+authors = ["Bart Grootte Bromhaar"]
+language = "en"
+src = "src"
+title = "Documentation_assignment"
+
+[preprocessor.plantuml]
+plantuml-cmd="https://www.plantuml.com/plantuml"
