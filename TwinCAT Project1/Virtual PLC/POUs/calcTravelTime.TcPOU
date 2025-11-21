@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <POU Name="calcTravelTime" Id="{e87fe44f-42b5-4bf6-a6a6-a6eae7440a48}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION calcTravelTime : INT
+VAR_INPUT
+    distance : INT; // in kilometers
+    speed : INT;    // in km/h
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// Simpele berekening reistijd in minuten
+calcTravelTime := (distance) / speed;]]></ST>
+    </Implementation>
+    <LineIds Name="calcTravelTime">
+      <LineId Id="19" Count="0" />
+      <LineId Id="23" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
